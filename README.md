@@ -44,7 +44,7 @@ An overview of research works in this repository:
 
 ## Liscense
 
-This repo uses [MIT LICENSE] (https://github.com/facebookresearch/mtrl/blob/main/LICENSE)
+This repo uses [MIT LICENSE] (https://github.com/TJU-DRL-LAB/transfer-and-multi-task-reinforcemente-learning/blob/main/LICENSE)
 
 ## Acknowledgements
 
