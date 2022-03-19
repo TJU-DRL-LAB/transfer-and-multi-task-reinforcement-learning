@@ -27,8 +27,9 @@ We have covered the implementation of these following multi-task methods, which 
 + **CARE** -  https://arxiv.org/abs/2102.06177
 + **MTSAC**
 + **MTMHSAC**
++ **KTM-DRL** https://proceedings.neurips.cc/paper/2020/hash/acab0116c354964a558e65bdd07ff047-Abstract.html
 
-## Benchmarks
+## Benchmarks (TODO)
 
 We run multi-task algorithm in the benchmarks: Metaworld, MuJoCo. Please follow the results below.
 
@@ -36,12 +37,12 @@ We run multi-task algorithm in the benchmarks: Metaworld, MuJoCo. Please follow 
 
 // some introduction to Metaworld.
 
-## Setup
+## Setup (TODO)
+ 
++ Clone the repository
++ Install dependencies
 
-+ Clone the repository: `git clone git@gitlab.example.com:ytp/transfer-and-multi-task-reinforcement-learning.git`.
-+ Install dependencies: `pip install -r requirements.txt`
-
-## Usage(TODO)
+## Usage (TODO)
 
 All experiments were written in `PyTorch 1.7` and can be trained with different flags (hyper-parameters) when running each training script. We briefly introduce some important flags below. 
 
