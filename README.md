@@ -45,10 +45,10 @@ An overview of research works in this repository:
 | Single-agent Transfer RL | Same-domain Transfer | CAPS  | :white_check_mark: |AAMAS 2019| https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Single-agent Transfer RL | Cross-domain Transfer| CAT  | :x: | In progress | N/A |
 | Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
-| Single-agent Multi-task RL |  | KTM-DRL  | :x: | NeurIPS 2020 | https://proceedings.neurips.cc/paper/2020/hash/acab0116c354964a558e65bdd07ff047-Abstract.html|
+| Single-agent Multi-task RL |  | KTM-DRL  | :white_check_mark: | NeurIPS 2020 | https://proceedings.neurips.cc/paper/2020/hash/acab0116c354964a558e65bdd07ff047-Abstract.html|
 | Multi-agent Transfer RL | Same task, transfer across agents | MAPTF  | :white_check_mark: | NeurIPS 2021 | https://proceedings.neurips.cc/paper/2021/hash/8d9a6e908ed2b731fb96151d9bb94d49-Abstract.html|
 | Multi-agent Transfer RL | Same task, transfer across agents | DVM  | :white_check_mark: | IROS 2019 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795|
-| Multi-agent Transfer RL | Policy reuse across tasks | Bayes-ToMoP  | :x: | IJCAI 2019 | https://dl.acm.org/doi/abs/10.5555/3367032.3367121|
+| Multi-agent Transfer RL | Policy reuse across tasks | Bayes-ToMoP  | :white_check_mark: | IJCAI 2019 | https://dl.acm.org/doi/abs/10.5555/3367032.3367121|
 
 
 ## Liscense
