@@ -23,10 +23,11 @@ This category include transfer among agents in the same-task and cross-task tran
 
 ### Transfer across multi-agent tasks:
 
+- **Bayes-ToMoP** - [IJCAI’2019](https://dl.acm.org/doi/abs/10.5555/3367032.3367121)
 
 ## Benchmarks
 
-We run multi-task algorithm in the benchmarks: Multiagent Particle Environment (MPE), Pacman, and StarCraft II. Please follow the results below.
+We run multi-task algorithm in the benchmarks: Multiagent Particle Environment (MPE), Pacman. Please follow the results below.
 
 // some introduction to MPE.
 
@@ -56,7 +57,3 @@ If you found this code/work to be useful in your own research, please considerin
 
 ## Acknowledgement
 
-
-
-## Contact
-If you have any questions, please contact 
