@@ -1,6 +1,6 @@
 [submodule "Single-agent Transfer RL/Same-domain Transfer/PTF"]
 	path = Single-agent Transfer RL/Same-domain Transfer/PTF
-	url = git@github.com:tianpeiyang/PTF_code.git
+	url = https://github.com/tianpeiyang/PTF_code.git
 [submodule "Multi-agent Transfer RL/MAPTF"]
 	path = Multi-agent Transfer RL/MAPTF
-	url = git@github.com:tianpeiyang/MAPTF_code.git
+	url = https://github.com/tianpeiyang/MAPTF_code.git

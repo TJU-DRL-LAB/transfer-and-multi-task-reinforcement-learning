@@ -1,0 +1,34 @@
+{
+  "flag": "train",
+  "load": "",
+  "teacher": [
+    "TCH/Ant-v2",
+    "TCH/HalfCheetah-v2",
+    "TCH/Hopper-v2",
+    "TCH/Walker2d-v2",
+    "TCH/InvertedPendulum-v2",
+    "TCH/InvertedDoublePendulum-v2"
+  ],
+  "step": {
+    "training": {
+      "offline": 500e3,
+      "online": 500e3
+    },
+    "observation": 10e3,
+    "saving": 10e3,
+    "evaluation": 10e3
+  },
+  "noise": {
+    "expl_noise": 0.1,
+    "noise_clip": 0.5,
+    "policy_freq": 2
+  },
+  "train": {
+    "batch_size": 256,
+    "lr": 0.005,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "buffer_size": 1e6
+  }
+}
+

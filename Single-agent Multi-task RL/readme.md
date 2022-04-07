@@ -1,17 +1,33 @@
 # Multi-task RL
-This directory contains the source code of Single-agent Multi-task baselines and benchmarks. 
+One of the directions to improve the **efficiency of the RL agent** is by multi-tasking-based learning. One of the well-known definitions states that “Multi-task Learning is an approach to inductive transfer that improves generalization by using the domain information contained in the training signals of related tasks as an inductive bias”.
 
-## Contents
+This repo contains representative research works of on the topic of Multi-task RL. 
+<div align=center><img align="center" src="assets/multi-task intro.png" alt="multi-task_intro" style="zoom:20%;" /></div>
 
-1. Baselines
-2. Benchmarks
-3. Setup
-4. Usage
-5. Acknowledgements
+## An Overall View of Research Works in This Repo
 
-## Baselines
+This repo include two parts:
 
-We have covered the implementation of these following multi-task methods, which are common used baselines presented in recent papers. Some implementation are citing from @mtrl
+1. Current and previous influential work in Multi-task RL research field, which are common used baselines presented in recent papers.Some implementation are citing from @mtrl
+2. Multi-task RL research works from TJU-RL-Lab.
+Both will be constantly updated to include new researches. (The development of this repo is in progress at present.)
+
+| Method | Is Contained | Is ReadME Prepared | Author | Publication | Link |
+| ------ | --- | --- | ------ | ------ | ------ |
+| KTM-DRL | ✅ | ✅ | Zhiyuan Xu  | NeurIPS 2020 | https://arxiv.org/abs/2010.07494 |
+
+## Installation
+
+The algorithms in this repo are all implemented **python 3.6** (and versions above). **PyTorch** are the main DL code frameworks we adopt in this repo with different choices in different algorithms.
+
+Note that the algorithms contained in this repo may not use all the same environments. Please check the README of specific algorithms for detailed installation guidance.
+
+## TODO
+- [ ] update our work
+
+## Related Work
+
+Here we provide a useful list of representative related works on Multi-task RL.
 
 ### Network-Architecture:
 
@@ -25,68 +41,3 @@ We have covered the implementation of these following multi-task methods, which 
 ### Others:
 
 + **CARE** -  https://arxiv.org/abs/2102.06177
-+ **MTSAC**
-+ **MTMHSAC**
-+ **KTM-DRL** https://proceedings.neurips.cc/paper/2020/hash/acab0116c354964a558e65bdd07ff047-Abstract.html
-
-## Benchmarks (TODO)
-
-We run multi-task algorithm in the benchmarks: Metaworld, MuJoCo. Please follow the results below.
-
-// some introduction to multi-task MuJoCo.
-
-// some introduction to Metaworld.
-
-## Setup (TODO)
- 
-+ Clone the repository
-+ Install dependencies
-
-## Usage (TODO)
-
-All experiments were written in `PyTorch 1.7` and can be trained with different flags (hyper-parameters) when running each training script. We briefly introduce some important flags below. 
-
-| Flag Name     | Usage                                                                                                                                    | Comments                                                                            |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| `network`     | choose multi-task network: `split, mtan`                                                                                                 | both architectures are based on ResNet-50; only available in dense prediction tasks |
-| `dataset`     | choose dataset: `nyuv2, cityscapes`                                                                                                      | only available in dense prediction tasks                                            |
-| `weight`      | choose weighting-based method: `equal, uncert, dwa, autol`                                                                               | only `autol` will behave differently when set to different primary tasks            |
-| `grad_method` | choose gradient-based method: `graddrop, pcgrad, cagrad`                                                                                 | `weight` and `grad_method` can be applied together                                  |
-| `task`        | choose primary tasks: `seg, depth, normal` for NYUv2, `seg, part_seg, disp` for CityScapes, `all`: a combination of all standard 3 tasks | only available in dense prediction tasks                                            |
-| `with_noise`  | toggle on to add noise prediction task for training (to evaluate robustness in auxiliary learning setting)                               | only available in dense prediction tasks                                            |
-| `subset_id`   | choose domain ID for CIFAR-100, choose `-1` for the multi-task learning setting                                                          | only available in CIFAR-100 tasks                                                   |
-| `autol_init`  | initialisation of Auto-Lambda, default `0.1`                                                                                             | only available when applying Auto-Lambda                        |
-| `autol_lr`    | learning rate of Auto-Lambda, default `1e-4`  for NYUv2 and `3e-5` for CityScapes                                                        | only available when applying Auto-Lambda                       |
-
-Training Auto-Lambda in Multi-task / Auxiliary Learning Mode:
-```
-python trainer_dense.py --dataset [nyuv2, cityscapes] --task [PRIMARY_TASK] --weight autol --gpu 0   # for NYUv2 or CityScapes dataset
-python trainer_cifar.py --subset_id [PRIMARY_DOMAIN_ID] --weight autol --gpu 0   # for CIFAR-100 dataset
-```
-
-Training in Single-task Learning Mode:
-```
-python trainer_dense_single.py --dataset [nyuv2, cityscapes] --task [PRIMARY_TASK]  --gpu 0   # for NYUv2 or CityScapes dataset
-python trainer_cifar_single.py --subset_id [PRIMARY_DOMAIN_ID] --gpu 0   # for CIFAR-100 dataset
-```
-
-*Note: All experiments in the original paper were trained from scratch without pre-training.*
-
-## Citation
-If you found this code/work to be useful in your own research, please considering citing the following:
-
-```
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={}
-}
-```
-
-## Acknowledgement
-
-
-
-## Contact
-If you have any questions, please contact 

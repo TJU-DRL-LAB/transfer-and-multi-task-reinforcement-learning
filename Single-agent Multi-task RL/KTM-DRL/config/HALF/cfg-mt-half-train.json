@@ -1,0 +1,35 @@
+{
+  "flag": "train",
+  "load": "",
+  "teacher": [
+    "TCH/HalfCheetahSmallFoot-v1/24162633-s200",
+    "TCH/HalfCheetahBigFoot-v1/24162634-s200",
+    "TCH/HalfCheetahSmallLeg-v1/24162634-s200",
+    "TCH/HalfCheetahBigLeg-v1/24162634-s200",
+    "TCH/HalfCheetahSmallThigh-v1/24162813-s200",
+    "TCH/HalfCheetahBigThigh-v1/24162813-s200",
+    "TCH/HalfCheetahSmallTorso-v1/24162814-s200",
+    "TCH/HalfCheetahBigTorso-v1/24162814-s200"
+  ],
+  "step": {
+    "training": {
+      "offline": 500e3,
+      "online": 500e3
+    },
+    "observation": 10e3,
+    "saving": 10e3,
+    "evaluation": 10e3
+  },
+  "noise": {
+    "expl_noise": 0.1,
+    "noise_clip": 0.5,
+    "policy_freq": 2
+  },
+  "train": {
+    "batch_size": 256,
+    "lr": 0.005,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "buffer_size": 1e6
+  }
+}
