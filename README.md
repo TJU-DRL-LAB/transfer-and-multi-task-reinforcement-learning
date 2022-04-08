@@ -26,10 +26,6 @@ This repository will be constantly updated to include new research works.
 
 - **Multi-task RL**, in which one network learns policies for multiple tasks, has emerged as another promising direction with fast inference and good performance.
 
-In this repo, we provide several specific solutions including:
-
-* **KTM-DRL(reproduced)** : A Knowledge Transfer based Multi-task Deep Reinforcement Learning framework (KTM-DRL) for continuous control, which enables a single DRL agent to achieve expert-level performance in multiple different tasks by learning from task-specific teachers. In KTM-DRL, the multi-task agent first leverages an offline knowledge transfer algorithm designed particularly for the actor-critic architecture to quickly learn a control policy from the experience of task-specific teachers, and then it employs an online learning algorithm to further improve itself by learning from new online transition samples under the guidance of those teachers. We reproduce the results in the MuJoCo continuous control task suite, more details can be find [here].
-
 ## Directory Structure of this Repo
 
 This repository consists of 
@@ -45,7 +41,6 @@ An overview of research works in this repository:
 | Single-agent Transfer RL | Same-domain Transfer | CAPS  | :white_check_mark: |AAMAS 2019| https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Single-agent Transfer RL | Cross-domain Transfer| CAT  | :x: | In progress | N/A |
 | Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
-| Single-agent Multi-task RL |  | KTM-DRL  | :white_check_mark: | NeurIPS 2020 | https://proceedings.neurips.cc/paper/2020/hash/acab0116c354964a558e65bdd07ff047-Abstract.html|
 | Multi-agent Transfer RL | Same task, transfer across agents | MAPTF  | :white_check_mark: | NeurIPS 2021 | https://proceedings.neurips.cc/paper/2021/hash/8d9a6e908ed2b731fb96151d9bb94d49-Abstract.html|
 | Multi-agent Transfer RL | Same task, transfer across agents | DVM  | :white_check_mark: | IROS 2019 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795|
 | Multi-agent Transfer RL | Policy reuse across tasks | Bayes-ToMoP  | :white_check_mark: | IJCAI 2019 | https://dl.acm.org/doi/abs/10.5555/3367032.3367121|
