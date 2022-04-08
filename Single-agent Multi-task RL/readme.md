@@ -8,13 +8,9 @@ This repo contains representative research works of on the topic of Multi-task R
 
 This repo include two parts:
 
-1. Current and previous influential work in Multi-task RL research field, which are common used baselines presented in recent papers.Some implementation are citing from @mtrl
+1. Current and previous influential work in Multi-task RL research field, which are common used baselines presented in recent papers. Some implementation are citing from @mtrl
 2. Multi-task RL research works from TJU-RL-Lab.
 Both will be constantly updated to include new researches. (The development of this repo is in progress at present.)
-
-| Method | Is Contained | Is ReadME Prepared | Author | Publication | Link |
-| ------ | --- | --- | ------ | ------ | ------ |
-| KTM-DRL | ✅ | ✅ | Zhiyuan Xu  | NeurIPS 2020 | https://arxiv.org/abs/2010.07494 |
 
 ## Installation
 
