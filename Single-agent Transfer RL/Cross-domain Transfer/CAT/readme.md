@@ -71,10 +71,11 @@ python -m baselines.run --env=CentipedeTen-v1 --source_env=CentipedeFour-v1 --so
 If you found this work to be useful in your own research, please considering citing the following:
 
 ```
-@article{You_545,
-  title={Cross-domain adaptive transfer reinforcement learning based on state-action correspondence},
-  author={Heng, You and Tianpei, Yang and Yan, Zheng and Jianye, HAO and Matthew, E. Taylor},
-  year={2022}
+@inproceedings{cat,
+  author    = {Heng You and Tianpei Yang and Yan Zheng and Jianye Hao and Matthew E. Taylor},
+  title     = {Cross-domain Adaptive Transfer Reinforcement Learning Based on State-Action Correspondence},
+  booktitle = {Proceedings of the Thirty-eighth Conference on Uncertainty in Artificial Intelligence},
+  year      = {2022}
 }
 ```
 
