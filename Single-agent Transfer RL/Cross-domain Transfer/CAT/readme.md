@@ -1,6 +1,6 @@
 # Cross-Domain Adaptive Transfer Reinforcement Learning Based on State-Action Correspondence
 
-This repository contains the source code of [Cross-Domain Adaptive Transfer Reinforcement Learning Based on State-Action Correspondence](https://arxiv.org/abs/2010.07494) accepted on UAI 2022. 
+This repository contains the source code of [Cross-Domain Adaptive Transfer Reinforcement Learning Based on State-Action Correspondence]([Cross-domain Adaptive Transfer Reinforcement Learning Based on State-Action Correspondence | OpenReview](https://openreview.net/forum?id=ShN3hPUsce5)) accepted on UAI 2022. 
 
 ## Introduction
 
@@ -49,11 +49,22 @@ Experimental results show that CAT significantly accelerates RL and outperforms 
 To run CAT, for example:
 
 ```eval
-python -m baselines.run --env=CentipedeEight-v1 --source_env=CentipedeFour-v1 --source_env1=CentipedeSix-v1 --alg=ppo2 --num_timesteps=2e6 --pi_scope=student0 --vf_scope=vf_student0 --network=mlp --teacher_network=mlp --save_path=models --save_interval=10 --log_path=logs --teacher_paths teacher_models/centipede_four/0/00970 --teacher_paths1 teacher_models/centipede_six/0/00970 --mapping=learned
-
+python -m baselines.run --env=CentipedeEight-v1 --source_env=CentipedeFour-v1 --source_env1=CentipedeSix-v1 --alg=ppo2 --num_timesteps=2e6 --pi_scope=student0 --vf_scope=vf_student0 --network=mlp --teacher_network=mlp --save_path=models --save_filenumber=0 --save_interval=10 --log_path=logs --teacher_paths teacher_models/centipede_four/0/00970 --teacher_paths1 teacher_models/centipede_six/0/00970 --mapping=learned
 ```
 
-will run transfer from `CentipedeFour` and `CentipedeSix ` to `CentipedeEight` using the corresponding teacher models which you can also train by yourself. 
+will run transfer from `CentipedeFour` and `CentipedeSix ` to `CentipedeEight` using the corresponding teacher models which you can also train by yourself using the following command:
+
+```
+python -m baselines.run --env=CentipedeFour-v1 --alg=ppo2 --num_timesteps=2e6 --network=mlp --save_path=teacher_models/centipede_four/5 --save_interval=10 --log_path=teacher_models/centipede_four/5
+```
+
+ If you want to expand to more source policies like transfer from `CentipedeFour`, `CentipedeSix` and `CentipedeEight` to `CentipedeTen`, you should add the corresponding state encoders, reverse state encoders and action encoders in the code and use the following command:
+
+```
+python -m baselines.run --env=CentipedeTen-v1 --source_env=CentipedeFour-v1 --source_env1=CentipedeSix-v1 --source_env2=CentipedeEight-v1 --alg=ppo2 --num_timesteps=2e6 --pi_scope=student0 --vf_scope=vf_student0 --network=mlp --teacher_network=mlp --save_path=models --save_filenumber=0 --save_interval=10 --log_path=logs --teacher_paths teacher_models/centipede_four/0/00970 --teacher_paths1 teacher_models/centipede_six/0/00970 --teacher_paths2 teacher_models/centipede_eight/0/00970 --mapping=learned
+```
+
+
 
 ## Citation
 
