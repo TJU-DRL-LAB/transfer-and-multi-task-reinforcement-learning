@@ -23,7 +23,14 @@ pip install -U 'mujoco-py<1.50.2,>=1.50.1'
 ### Install everything else
 
 ``
-pip install -r requirements.txt
+gym==0.10.5
+scipy==1.3.3
+joblib==0.14.0
+cloudpickle==1.2.2
+click==7.0
+opencv-python==4.1.2.30
+tensorflow==1.12.0
+num2words==0.5.10
 ``
 
 This code was tested using Python version 3.6.8.
