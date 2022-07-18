@@ -21,7 +21,7 @@ We have covered the implementation of these following transfer RL methods, which
 ### Cross-domain transfer:
 - **MIKT** - [UAI’2020](https://dl.acm.org/doi/abs/10.5555/3306127.3331795)
 - **Cycle-consistency** - [ICLR'2021](https://openreview.net/forum?id=QIRlze3I6hX) 
-- **CAT** - In progress
+- **CAT** - [UAI'2022](https://openreview.net/forum?id=ShN3hPUsce5) 
 
 
 ## Benchmarks (TODO)
