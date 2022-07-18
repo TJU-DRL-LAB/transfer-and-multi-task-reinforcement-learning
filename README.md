@@ -40,11 +40,11 @@ An overview of research works in this repository:
 | Single-agent Transfer RL | Same-domain Transfer | PTF  | :white_check_mark: |IJCAI 2020| https://dl.acm.org/doi/abs/10.5555/3491440.3491868 |
 | Single-agent Transfer RL | Same-domain Transfer | CAPS  | :white_check_mark: |AAMAS 2019| https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Single-agent Transfer RL | Cross-domain Transfer| CAT  | :white_check_mark: | UAI 2022 | https://openreview.net/forum?id=ShN3hPUsce5 |
-| Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Multi-agent Transfer RL | Same task, transfer across agents | MAPTF  | :white_check_mark: | NeurIPS 2021 | https://proceedings.neurips.cc/paper/2021/hash/8d9a6e908ed2b731fb96151d9bb94d49-Abstract.html|
 | Multi-agent Transfer RL | Same task, transfer across agents | DVM  | :white_check_mark: | IROS 2019 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795|
 | Multi-agent Transfer RL | Policy reuse across tasks | Bayes-ToMoP  | :white_check_mark: | IJCAI 2019 | https://dl.acm.org/doi/abs/10.5555/3367032.3367121|
 
+<!--| Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |-->
 
 ## Liscense
 
