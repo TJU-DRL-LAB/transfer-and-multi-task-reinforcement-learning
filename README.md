@@ -23,6 +23,7 @@ This repository will be constantly updated to include new research works.
 
   * **MAPTF** addresses the **Sample-inefficiency problem** in deep MARL by proposing a Multi-Agent Policy Transfer Framework (MAPTF). MAPTF learns which agent's policy is the best to reuse for each agent and when to terminate it by modeling multiagent policy transfer as the option learning problem. Furthermore, to solve the reward conflict problem (each agent's experience may be inconsistent with each other, which may cause the inaccuracy and oscillation of the option-value's estimation) due to the partial observability of the environment, a novel option learning algorithm is proposed, the Successor Representation Option (SRO) learning to solve it by decoupling the environment dynamics from rewards and learning the option-value under each agent's preference. MAPTF can be easily combined with existing deep RL and MARL approaches, and experimental results show it significantly boosts the performance of existing methods in both discrete and continuous state spaces.
 
+  * **CAT** addresses the **Sample-inefficiency problem** in cross-domain DRL by proposing a novel framework called Cross-domain Adaptive Transfer (CAT). CAT learns the state-action correspondence from each source task to the target task and adaptively transfers knowledge from multiple source task policies to the target policy. CAT can be easily combined with existing DRL algorithms and experimental results show that CAT significantly accelerates learning and outperforms other cross-domain transfer methods on multiple continuous action control tasks.
 
 - **Multi-task RL**, in which one network learns policies for multiple tasks, has emerged as another promising direction with fast inference and good performance.
 
@@ -38,12 +39,14 @@ An overview of research works in this repository:
 | Category | Sub-Categories | Method |  Is Contained  | Publication | Link |
 | ------ | ------ | ----- | --- | ------ | ------ |
 | Single-agent Transfer RL | Same-domain Transfer | PTF  | :white_check_mark: |IJCAI 2020| https://dl.acm.org/doi/abs/10.5555/3491440.3491868 |
-| Single-agent Transfer RL | Same-domain Transfer | CAPS  | :white_check_mark: |AAMAS 2019| https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Single-agent Transfer RL | Cross-domain Transfer| CAT  | :white_check_mark: | UAI 2022 | https://openreview.net/forum?id=ShN3hPUsce5 |
-| Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |
 | Multi-agent Transfer RL | Same task, transfer across agents | MAPTF  | :white_check_mark: | NeurIPS 2021 | https://proceedings.neurips.cc/paper/2021/hash/8d9a6e908ed2b731fb96151d9bb94d49-Abstract.html|
-| Multi-agent Transfer RL | Same task, transfer across agents | DVM  | :white_check_mark: | IROS 2019 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795|
 | Multi-agent Transfer RL | Policy reuse across tasks | Bayes-ToMoP  | :white_check_mark: | IJCAI 2019 | https://dl.acm.org/doi/abs/10.5555/3367032.3367121|
+
+
+<!--| Single-agent Transfer RL | Cross-domain Transfer| MIKT  | :x: | UAI 2020 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |-->
+<!--| Single-agent Transfer RL | Same-domain Transfer | CAPS  | :white_check_mark: |AAMAS 2019| https://dl.acm.org/doi/abs/10.5555/3306127.3331795 |-->
+<!--| Multi-agent Transfer RL | Same task, transfer across agents | DVM  | :white_check_mark: | IROS 2019 | https://dl.acm.org/doi/abs/10.5555/3306127.3331795|-->
 
 
 ## Liscense
