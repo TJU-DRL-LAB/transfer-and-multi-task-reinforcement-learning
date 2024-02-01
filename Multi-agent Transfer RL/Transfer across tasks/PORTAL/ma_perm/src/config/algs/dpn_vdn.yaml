@@ -1,0 +1,63 @@
+# --- VDN specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 100000 # 500000 for 6h_vs_8z
+
+runner: "parallel"
+batch_size_run: 8 # batch_size_run=4, buffer_size = 2500, batch_size=64  for 3s5z_vs_3s6z
+buffer_size: 5000
+batch_size: 128
+
+t_max: 10050000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+mac: "permutation_mac"
+agent: "n_rnn"
+agent_output_type: q
+
+learner: "permutation_q_learner"
+mixer: "vdn"
+mixing_embed_dim: 32
+hypernet_embed: 64
+lr: 0.001 # Learning rate for agents
+td_lambda: 0.6 # 0.3 for 6h_vs_8z
+optimizer: 'adam'
+q_lambda: False
+
+
+
+random_projection: False
+assignment_net_dim: 64
+detach_inverse_assignment: True
+
+update_Q_using_stored_assignment: False
+
+auxiliary_loss: True
+auxiliary_update_frequency: 1
+auxiliary_loss_coef: 1.
+
+k_exchange: 0  # randomly swap 2 rows for exploration
+softmax_tau: 0.5
+
+
+use_sinkhorn: False  # If True use sinkhorn layer else use sequential sampling
+sinkhorn_iters: 1
+add_gumbel_noise: False
+
+Hungarian_worker_num: 8  # parallel computing
+
+
+# TODO: partial observation
+permute_condition: 1
+permute_condition_value: 1
+
+assignment_use_RNN: False
+transform_ally: False
+
+name: "dpn_vdn"
